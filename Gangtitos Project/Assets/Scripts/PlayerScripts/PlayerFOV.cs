@@ -21,11 +21,39 @@ public class PlayerFOV : MonoBehaviour
         cameraFrustum = GeometryUtility.CalculateFrustumPlanes(cameraMain);
         if (GeometryUtility.TestPlanesAABB(cameraFrustum, bounds))
         {
-            canSeeEnemy = true;
+            // Use raycasting to check if there are any objects blocking the view
+            RaycastHit hit;
+            if (Physics.Raycast(cameraMain.transform.position, transform.position - cameraMain.transform.position, out hit))
+            {
+                if (hit.collider != null && hit.collider.gameObject.CompareTag("Enemy"))
+                {
+                    canSeeEnemy = true;
+                }
+                else
+                {
+                    canSeeEnemy = false;
+                }
+
+                // Draw a line to visualize the raycast
+                Debug.DrawLine(cameraMain.transform.position, hit.point, Color.red);
+            }
+            else
+            {
+                canSeeEnemy = false;
+            }
         }
         else
         {
             canSeeEnemy = false;
         }
     }
+
+    private void OnDrawGizmos()
+    {
+        // Draw a ray to visualize the direction of the raycast
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawRay(cameraMain.transform.position, transform.position - cameraMain.transform.position);
+    }
 }
+
+
