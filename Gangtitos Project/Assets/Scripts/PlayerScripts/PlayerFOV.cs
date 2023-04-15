@@ -50,7 +50,6 @@ public class PlayerFOV : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        // Draw a ray to visualize the direction of the raycast
         Gizmos.color = Color.yellow;
         Gizmos.DrawRay(cameraMain.transform.position, transform.position - cameraMain.transform.position);
     }
