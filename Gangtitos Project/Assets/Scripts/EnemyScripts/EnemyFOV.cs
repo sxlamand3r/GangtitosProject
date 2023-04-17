@@ -28,7 +28,7 @@ public class EnemyFOV : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(enemyCamera.transform.position, direction.normalized, out hit, maxDistance))
                 {
-                    if (hit.transform.CompareTag("Player"))
+                    if (hit.collider.gameObject.GetComponent<Player>())
                     {
                         canSeePlayer = true;
                     }

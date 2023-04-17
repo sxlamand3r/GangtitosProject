@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.65080994, g: 0.666729, b: 0.7075472, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.05
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 47630834}
   - component: {fileID: 47630833}
   - component: {fileID: 47630832}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 74873463}
   - component: {fileID: 74873462}
   - component: {fileID: 74873461}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 138156964}
   - component: {fileID: 138156963}
   - component: {fileID: 138156962}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 145067817}
   - component: {fileID: 145067816}
   - component: {fileID: 145067815}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 205564025}
   - component: {fileID: 205564024}
   - component: {fileID: 205564023}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -620,7 +620,7 @@ GameObject:
   - component: {fileID: 235643689}
   - component: {fileID: 235643688}
   - component: {fileID: 235643687}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -769,7 +769,7 @@ GameObject:
   - component: {fileID: 247125735}
   - component: {fileID: 247125734}
   - component: {fileID: 247125733}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1027,7 +1027,7 @@ GameObject:
   - component: {fileID: 574234726}
   - component: {fileID: 574234725}
   - component: {fileID: 574234724}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1274,7 +1274,7 @@ GameObject:
   - component: {fileID: 664379907}
   - component: {fileID: 664379906}
   - component: {fileID: 664379905}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1371,7 +1371,7 @@ GameObject:
   - component: {fileID: 726653318}
   - component: {fileID: 726653317}
   - component: {fileID: 726653316}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1729,7 +1729,6 @@ GameObject:
   m_Component:
   - component: {fileID: 891943111}
   - component: {fileID: 891943108}
-  - component: {fileID: 891943110}
   - component: {fileID: 891943109}
   m_Layer: 6
   m_Name: Camera
@@ -1814,14 +1813,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &891943110
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891943107}
-  m_Enabled: 1
 --- !u!4 &891943111
 Transform:
   m_ObjectHideFlags: 0
@@ -1984,7 +1975,7 @@ GameObject:
   - component: {fileID: 1089730541}
   - component: {fileID: 1089730540}
   - component: {fileID: 1089730539}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2081,7 +2072,7 @@ GameObject:
   - component: {fileID: 1091132621}
   - component: {fileID: 1091132620}
   - component: {fileID: 1091132619}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2420,8 +2411,8 @@ MonoBehaviour:
   defaultLayer:
     serializedVersion: 2
     m_Bits: 1
-  maxDistance: 20
-  maxAngle: 80
+  maxDistance: 10
+  maxAngle: 70
   player: {fileID: 0}
   canSeePlayer: 0
 --- !u!1 &1331712737
@@ -2436,7 +2427,7 @@ GameObject:
   - component: {fileID: 1331712741}
   - component: {fileID: 1331712740}
   - component: {fileID: 1331712739}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2533,7 +2524,7 @@ GameObject:
   - component: {fileID: 1340898732}
   - component: {fileID: 1340898731}
   - component: {fileID: 1340898730}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2727,7 +2718,7 @@ GameObject:
   - component: {fileID: 1515399672}
   - component: {fileID: 1515399671}
   - component: {fileID: 1515399670}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3101,7 +3092,6 @@ GameObject:
   - component: {fileID: 1718994794}
   - component: {fileID: 1718994797}
   - component: {fileID: 1718994796}
-  - component: {fileID: 1718994795}
   m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
@@ -3124,20 +3114,6 @@ Transform:
   m_Father: {fileID: 1853747845}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &1718994795
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1718994793}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1718994796
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3343,7 +3319,7 @@ GameObject:
   - component: {fileID: 1791134295}
   - component: {fileID: 1791134294}
   - component: {fileID: 1791134293}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3632,8 +3608,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1853747845}
   - component: {fileID: 1853747844}
+  - component: {fileID: 1853747849}
   - component: {fileID: 1853747846}
   - component: {fileID: 1853747847}
+  - component: {fileID: 1853747848}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -3709,12 +3687,38 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853747843}
   m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &1853747848
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853747843}
+  m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 1
+  m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1853747849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853747843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab3c5f93c935cc49a2a7c8e01e59bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1922840876
 GameObject:
   m_ObjectHideFlags: 0
@@ -3725,7 +3729,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1922840880}
   - component: {fileID: 1922840879}
-  - component: {fileID: 1922840878}
   - component: {fileID: 1922840877}
   m_Layer: 0
   m_Name: Camera
@@ -3767,14 +3770,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &1922840878
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1922840876}
-  m_Enabled: 1
 --- !u!20 &1922840879
 Camera:
   m_ObjectHideFlags: 0
