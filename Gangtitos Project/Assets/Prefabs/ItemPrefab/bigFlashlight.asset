@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32719d7b9e5875145ba6fbc69fcf1668, type: 3}
+  m_Name: bigFlashlight
+  m_EditorClassIdentifier: 
+  cooldown: 3
+  item_type: 1
+  item_sprite: {fileID: 21300000, guid: ccebb06c5f1b5f84fa91b5f7c527b5a0, type: 3}
