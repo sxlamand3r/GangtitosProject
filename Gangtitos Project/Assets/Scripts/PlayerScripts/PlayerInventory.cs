@@ -19,11 +19,13 @@ public class PlayerInventory : MonoBehaviour
     [Header("Item gameobjects")]
     [SerializeField] GameObject flashlight_item;
     [SerializeField] GameObject bigFlaslight_item;
+    [SerializeField] GameObject Key_item;
 
     [Space(20)]
     [Header("Item prefabs")]
     [SerializeField] GameObject flashlight_prefab;
     [SerializeField] GameObject bigFlaslight_prefab;
+    [SerializeField] GameObject Key_prefab;
 
     //[Space(20)]
     //[Header("UI")]
@@ -40,9 +42,11 @@ public class PlayerInventory : MonoBehaviour
     {
         itemSetActive.Add(itemType.Flashlight, flashlight_item);
         itemSetActive.Add(itemType.bigFlashlight, bigFlaslight_item);
+        itemSetActive.Add(itemType.Key, Key_item);
 
         itemInstantiate.Add(itemType.Flashlight, flashlight_prefab);
         itemInstantiate.Add(itemType.bigFlashlight, bigFlaslight_prefab);
+        itemInstantiate.Add(itemType.Key, Key_prefab);
 
 
         NewItemSelected();
@@ -159,8 +163,7 @@ public class PlayerInventory : MonoBehaviour
     {
         flashlight_item.SetActive(false);
         bigFlaslight_item.SetActive(false);
-        // mace_item.SetActive(false);
-        //club_item.SetActive(false);
+        Key_item.SetActive(false);
 
 
         GameObject selectedItemGameobject = itemSetActive[inventoryList[selectedItem]];

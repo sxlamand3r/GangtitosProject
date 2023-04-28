@@ -12,4 +12,4 @@ public class ItemSO : ScriptableObject
 
 }
 
-public enum itemType { Flashlight, bigFlashlight};
+public enum itemType { Flashlight, bigFlashlight, Key};
