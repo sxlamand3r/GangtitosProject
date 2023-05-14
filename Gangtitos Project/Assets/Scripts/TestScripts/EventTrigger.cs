@@ -4,50 +4,49 @@ using UnityEngine;
 
 public class EventTrigger : MonoBehaviour
 {
-    [Header("Probability")]
-    public float chanceOfEvent = 0.5f; // Probabilidad de que ocurra el evento, puedes ajustarla según tus necesidades
-
-    [Space(20)]
     [Header("Types of Events")]
     public bool event1 = false; // Variable para controlar si el evento ya se activó
+    public float chanceOfEvent1 = 0.5f;
     public GameObject objetoADestruir;
     [SerializeField] private AudioClip Foco;
     [Space(10)]
     public bool event2 = false;
+    public float chanceOfEvent2 = 0.5f;
     public GameObject objetoActivar;
     public bool activarGravedad = true;
     [SerializeField] private AudioClip Cae;
 
-
+    private bool seEjecuto = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        //Evento 1 Foco Explota
-        if (other.CompareTag("Player") && event1)
+        if (!seEjecuto)
         {
-            float randomValue = Random.value;
-            if (randomValue <= chanceOfEvent)
+            //Evento 1 Foco Explota
+            if (other.CompareTag("Player") && event1)
             {
-                SoundController.Instance.runSound(Foco); 
-                Destroy(objetoADestruir); // Destruye el objeto especificado
-            }
-            Destroy(gameObject); // Destruye el collider con el que colisionó
-        }
-
-        //Evento 2 Objeto Cae
-        if (other.CompareTag("Player") && event2)
-        {
-            float randomValue = Random.value;
-            Rigidbody rb = objetoActivar.GetComponent<Rigidbody>();
-            if (rb != null && randomValue <= chanceOfEvent)
-            {
-                rb.useGravity = activarGravedad;
-                /*if (other.CompareTag("Ground"))
+                float randomValue1 = Random.value;
+                Debug.Log(randomValue1);
+                if (randomValue1 <= chanceOfEvent1)
                 {
-                    SoundController.Instance.runSound(Cae);
-                }*/
+                    SoundController.Instance.runSound(Foco);
+                    Destroy(objetoADestruir); // Destruye el objeto especificado
+                }
+                Destroy(gameObject); // Destruye el collider con el que colisionó
             }
-            Destroy(gameObject);
+
+            //Evento 2 Objeto Cae
+            if (other.CompareTag("Player") && event2)
+            {
+                float randomValue2 = Random.value;
+                Rigidbody rb = objetoActivar.GetComponent<Rigidbody>();
+                if (rb != null && randomValue2 <= chanceOfEvent2)
+                {
+                    rb.useGravity = activarGravedad;
+                }
+                Destroy(gameObject);
+            }
+            seEjecuto = true;
         }
     }
 }
